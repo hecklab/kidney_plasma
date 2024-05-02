@@ -7,11 +7,11 @@ library(readxl)
 
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
-#Read Genes output table
-df <- read.table("tables/report.gg_matrix.tsv",header = TRUE, sep="\t", na.strings=c("","NA"))
+#Read Genes output table can be found in PRIDE submission 
+df <- read.table("report.gg_matrix.tsv",header = TRUE, sep="\t", na.strings=c("","NA"))
 
 # Read Important Genes file
-important_genes <- read_excel("tables/Important proteins.xlsx") %>% as.data.frame()
+important_genes <- read_excel("Important proteins.xlsx") %>% as.data.frame()
 
 df <- df %>% pivot_longer(cols = -Genes,
                           names_to = "File.Name",
@@ -121,5 +121,5 @@ merged_df[is.na(merged_df)] <- as.numeric(lowest_value)
 merged_df <- merged_df %>% mutate_at(vars(-1), as.numeric)
 
 #save new files
-openxlsx::write.xlsx(merged_df,"tables/Supplementary Table 1.xlsx")
+openxlsx::write.xlsx(merged_df,"Supplementary Table 1.xlsx")
 
