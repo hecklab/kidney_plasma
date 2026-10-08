@@ -9,5 +9,3 @@ The script was used in the data analysis of the described paper below. It uses t
 2. Netherlands Proteomics Center, Utrecht 3584 CH, The Netherlands.
 3. Department of Medical Microbiology, University Medical Center Utrecht, Utrecht 3584 CH, The Netherlands.
 4. Department of Nephrology and Hypertension, University Medical Center Utrecht, Utrecht University, Utrecht 3584 CH, The Netherlands.
-
-*Corresponding author: Albert J. R. Heck, E-mail: a.j.r.heck@uu.nl
